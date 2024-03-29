@@ -4,7 +4,7 @@
 ### 自建优选域名
 ### 基于vps789.com-全球主机测速平台接口： https://vps789.com/vps/sum/cfIpTop20 提供的优选IP 自动更新优选域名。特别感谢ns大佬captain102 以及vps789.com 开放了优选IP的API
 ### 建议结合 https://www.nodeseek.com/post-84561-1 的文档配合食用
-### 2024-03-29 更新 增加自建优选反代域名脚本bestproxydomain.py 以及 tg频道通知
+### 2024-03-29 更新 增加自建优选反代域名脚本bestproxydomain.py 以及 tg频道通知, 特别感谢大佬ymyuuu开发优选IP的API，对应github地址： https://github.com/ymyuuu/IPDB
 
 ## 准备工作
 1. 已经托管到CF的一个域名
@@ -26,6 +26,10 @@ sudo apt-get install python3-pip
 4.安装cloudflare的python包
 ```
 sudo pip install cloudflare
+```
+5.安装telebot的python包
+```
+sudo pip install pyTelegramBotAPI
 ```
 ## 下载代码文件以及修改对应配置，请仔细修改对应配置，否则可能有意想不到的错误
 下载cfipdomain.py 并修改你的cf权证对应的配置，详细请参考如下代码说明：
